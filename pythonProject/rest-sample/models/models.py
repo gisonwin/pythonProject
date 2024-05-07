@@ -1,4 +1,5 @@
 from sqlmodel import Field, SQLModel, create_engine, Session, Relationship
+from decimal import Decimal
 
 
 # Team model
@@ -30,6 +31,7 @@ class HeroBase(SQLModel):
     name: str = Field(unique=True, index=True)
     secret_name: str
     age: int | None = Field(default=None, index=True)
+    money: Decimal | None = Field(default=None, nullable=True, max_digits=8, decimal_places=3)
 
     team_id: int | None = Field(default=None, foreign_key="team.id")
 
