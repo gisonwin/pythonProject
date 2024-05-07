@@ -7,8 +7,8 @@ def create_tables():
     SQLModel.metadata.create_all(engine)
 
     hero_1 = Hero(name="Dead pond", secret_name="Dive Wilson", age=18, money=12.5)
-    hero_2 = Hero(name='Spider-Boy', secret_name='Pedro Parquetry', age=30, money=12.5)
-    hero_3 = Hero(name="Rust-Man", secret_name="Tommy Sharp", age=48, money=1.10001)
+    hero_2 = Hero(name='Spider-Boy', secret_name='Pedro Parquetry', age=30, money=12348.567)
+    hero_3 = Hero(name="Rust-Man", secret_name="Tommy Sharp", age=48, money=1.101)
     hero_4 = Hero(name="Tarantula", secret_name="Natalia Roman-on", age=32, money=39.999)
     hero_5 = Hero(name="Black Lion", secret_name="Trevor Challa", age=35)
     hero_6 = Hero(name="Dr. Weird", secret_name="Steve Weird", age=36)
